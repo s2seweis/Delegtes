@@ -45,9 +45,19 @@
   <ItemGroup>
     <Compile Include="DelegatesExample\DelegateExampleOne.cs" />
     <Compile Include="DelegatesExample\DelegateExampleTwo.cs" />
+    <Compile Include="DelegatesExample\DelegatesAndEvents.cs" />
+    <Compile Include="DelegatesExample\EventsExample.cs" />
     <Compile Include="DelegatesExample\IndexDelegateExample.cs" />
+    <Compile Include="DelegatesExample\MulticastDelegatesExample.cs" />
+    <Compile Include="DelegatesExample\MulticastDelegatesExampleTwo.cs" />
+    <Compile Include="GenericsExample\GenericsExampleOne.cs" />
+    <Compile Include="GenericsExample\IndexGenericsExample.cs" />
+    <Compile Include="MonitorTemperatureApp\IndexMonitorTemperature.cs" />
+    <Compile Include="MonitorTemperatureApp\MonitorTemperatureApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockPriceAlertApp\IndexStockPriceAlert.cs" />
+    <Compile Include="StockPriceAlertApp\MonitorStockPrice.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

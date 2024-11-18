@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static Delegtes.DelegatesExample.DelegatesAndEvents;
 
 namespace Delegtes.DelegatesExample
 {
     internal class IndexDelegateExample
     {
+        // Constructor that initializes the process
         public IndexDelegateExample()
         {
             IndexDelegateExampleMethod();
@@ -15,19 +13,29 @@ namespace Delegtes.DelegatesExample
 
         public void IndexDelegateExampleMethod()
         {
-            //DelegateExampleOne delegateExample = new DelegateExampleOne();
-            DelegateExampleTwo delegateExampleTwo = new DelegateExampleTwo();
+            // Create an array of Person objects with Name and Age
+            Person[] people =
+            {
+                new Person {Name ="Alice", Age = 30},
+                new Person {Name ="Bob", Age = 25},
+                new Person {Name ="Dennis", Age = 26},
+                new Person {Name ="Charlie", Age = 19}
+            };
+
+            //// Create an instance of PersonSorter
+            //PersonSorter personSorter = new PersonSorter();
+
+            //// Sort by age (numbers) and display results using a foreach loop
+            //personSorter.SortByAgeAndDisplay(people);
+
+            //// Sort by name (alphabetical) and display results using a foreach loop
+            //personSorter.SortByNameAndDisplay(people);
+
+            //MulticastDelegatesExample multicastDelegatesExample = new MulticastDelegatesExample();
+
+            //MulticastDelegatesExampleTwo multicastDelegatesExampleTwo = new MulticastDelegatesExampleTwo();
+
+            EventsExample eventsExample = new EventsExample();
         }
     }
 }
-
-/*
- Why do we use Delegates?
-Delegates provide a way to pass methods as parameters, enabling flexible and extensible code designs. 
-
-When do we use Delegates?
-Use delegates when you need a way to encapsulate a method an pass it as an arguement.
-
-Where do we use Delegates?
-Delegates are used in callback mechanisms, event handling, and designing flexible APIs
- */
